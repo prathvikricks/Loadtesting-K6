@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f2f5;
+    }
+    .dashboard-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .welcome-message {
+      margin-bottom: 2rem;
+    }
+    .logout-btn {
+      padding: 8px 16px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="welcome-message">
+      <h1>Welcome, <%= username %>!</h1>
+      <p>You have successfully logged into your dashboard.</p>
+    </div>
+    <a href="/logout" class="logout-btn">Logout</a>
+  </div>
+</body>
+</html>
